@@ -33,8 +33,6 @@ print("The perimeter of the triangle is ",a+b+c)
 
 x=1
 while True:
-    
-    
     if y==0:
         break
     else:
@@ -47,7 +45,7 @@ def eqn(x):
 
 x=1
 while True:
-    if(int(eqn(x)==0)):
+    if(int(eqn(x))==0):
         break
     else: x += 1
 print(x)
@@ -92,4 +90,6 @@ print("Your weekly earning is ",int(hours* rate))
 
 
 
-
+#Write a Python script that displays the following table
+for n in range(1,5):
+    print(n,'1',n,n**2,n**3)
