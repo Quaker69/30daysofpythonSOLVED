@@ -132,7 +132,6 @@ for i in range(0,len(sentence1)):
     for j in range(0,len(sentence2)):
         print(sentence2[i])   #haha '\n'
 
-#Use a tab escape sequence to write the following lines.
 data={
     'Name':'loremPizza',
     'Age': 133,
@@ -140,4 +139,19 @@ data={
     'City':'Boonba'
 
 }
-keys=data.keys()
+keys=list(data.keys())
+print(f'{keys[0]}\t\t{keys[1]}\t\t{keys[2]}\t\t{keys[3]}')
+print(f'{data.get(keys[0])}\t{data.get(keys[1])}\t\t{data.get(keys[2])}\t\t{data.get(keys[3])}')
+# a warcrime, Yes
+
+#Use the string formatting method to display the following:
+radius = 10
+area = 3.14 * radius ** 2
+print(f'The area of a circle with radius {radius} is {area} meters square')
+
+#Make the following using string formatting methods:
+s=8
+t=6
+print(f'{s} + {t} ={s+t}')
+print(f'{s} - {6} ={s-t}')
+#lazy for others
