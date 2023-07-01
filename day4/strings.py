@@ -96,6 +96,14 @@ print(sentence.rindex('c'))
 #Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 
 print(sentence.slice())
+#Does ''Coding For All' start with a substring Coding?
+#Does 'Coding For All' end with a substring coding?
+
+str45='Coding For All'
+d=str45.strip()
+for i in range(0,len(d)):
+    if(d[i]=='Coding'):print(True) 
+    else:print(False)
 
 #'   Coding For All      '  , remove the left and right trailing spaces in the given string.
 coding='   Coding For All      '
@@ -103,5 +111,33 @@ coding_stp=coding.strip()
 concatinate_coding_str=' '.join(coding_stp)
 print(concatinate_coding_str)
 
+#Which one of the following variables return True when we use the method isidentifier():
+ident1='30DaysOfPython'
+ident2='thirty_days_of_python'
 
+ident1.isidentifier()
+ident2.isidentifier()
 
+#The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+pyyhonic_list= ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print(' #'.join(pyyhonic_list))
+
+#Use the new line escape sequence to separate the following sentences.
+
+sentence1='I am enjoying this challenge.'.strip()
+sentence2='I just wonder what is next.'.strip()
+
+for i in range(0,len(sentence1)):
+    print(sentence1[i])
+    for j in range(0,len(sentence2)):
+        print(sentence2[i])   #haha '\n'
+
+#Use a tab escape sequence to write the following lines.
+data={
+    'Name':'loremPizza',
+    'Age': 133,
+    'Country':'Earth',
+    'City':'Boonba'
+
+}
+keys=data.keys()
