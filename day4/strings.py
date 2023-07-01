@@ -97,8 +97,11 @@ print(sentence.rindex('c'))
 
 print(sentence.slice())
 
-print("hello")
-
+#'   Coding For All      '  , remove the left and right trailing spaces in the given string.
+coding='   Coding For All      '
+coding_stp=coding.strip()
+concatinate_coding_str=' '.join(coding_stp)
+print(concatinate_coding_str)
 
 
 
