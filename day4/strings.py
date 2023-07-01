@@ -97,7 +97,7 @@ print(sentence.rindex('c'))
 
 print(sentence.slice())
 
-
+print("hello")
 
 
 
