@@ -269,4 +269,4 @@ countries = [
 
 
 for i in range(len(countries)):
-    if(countries[i].st)
+    if(countries[i].strip())
