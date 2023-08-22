@@ -1,4 +1,6 @@
 import math
+import collections
+
 #Declare a function add_two_numbers. It takes two parameters and it returns a sum.
 def add_two_numbers(num1, num2):
     return num1+num2
@@ -12,8 +14,8 @@ def area_of_circle(rad):
 lst=[23,23,12,2451]
 def add_all_nums(lst[]):
     for i in range(lst):
-        if(type(lst[i]) = str):
-            break;
+        if(type(lst[i]) == str):
+            break
         else:
             sum=0
             for i in range(lst):
@@ -78,11 +80,88 @@ lst=['asdkf','easkdjf','asdio']
 def capitalize_list_items(lst):
     return lst.capitalize()
 
+
+
 # # #Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end
 
-def add_item(lst,str):
+list=('apple','dog')
 
+def add_item(list,item):
+    list.append(item)
+    print(list)
 
+#Declare a function named remove_item. It takes a list and an item parameters. It returns a list with the item removed from it.
+
+def remove_item(list,item):
+    list.remove(item)
+    print(list)
+
+# Declare a function named sum_of_numbers. It takes a number parameter and it adds all the numbers in that range.
+
+def sum_of_numbers(num):
+    return sum*(sum+1)/2
+
+#Declare a function named sum_of_odds. It takes a number parameter and it adds all the odd numbers in that range
+
+def sum_of_odds(num):
+    sum=0
+    for i in range(num):
+        if i%2==1:
+            sum += i
+    return sum
+
+#Declare a function named sum_of_even. It takes a number parameter and it adds all the even numbers in that - range.
+
+def sum_of_even(num):
+    sum=0
+    for i in range(num):
+        if i%2==0:
+            sum += i
+    return sum
+
+#Declare a function named evens_and_odds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+
+def evens_and_odds(intpovi):
+    even=odd=0
+    for i in range(intpovi):
+        if i%2==0:
+            even += 1
+        else:
+            odd += 1
+    print(f'The number of odds are {odd}.')
+    print(f'The number of evens are {even}.')
+
+#Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
+
+def factorial(num):
+    fact=1
+    for i in range(1,num+1):
+        fact = fact * i 
+
+#Call your function is_empty, it takes a parameter and it checks if it is empty or not
+#i cheak the is list is NULL
+def is_empty(list):
+    if len(list) == 0:
+        print("is empty")
+
+#Write different functions which take lists. They should calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (standard deviation).
+# note HowTo calculate(list,task_num)
+def calculate(list,task):
+    if task ==1:
+        mean=0
+        for i in range(len(list)):
+            mean += i
+        return mean/len(list)
+    if task ==2:
+        middle=len(list)-1
+        if middle%2==0:
+             return list[middle]
+        else:
+             return (list[middle]+list[middle+1])/2
+    if task ==3:
+        mode=collections.Counter(list)
+        for i    
+    # TODO mode is pending   and calculate_range, calculate_variance, calculate_std (standard deviation).
 
 
 
