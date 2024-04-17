@@ -71,9 +71,8 @@ def freq_origin(data):
     print(sort_dict_by_value(dict(Counter(origins)), True))
 
 
-'''
+
 r = requests.get('https://archive.ics.uci.edu/ml/datasets.php')
 
 soup = BeautifulSoup(r.content, features='lxml')
 print(soup.prettify())
-'''

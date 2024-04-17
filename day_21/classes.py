@@ -1,4 +1,5 @@
 import statistics as stat
+from time import sleep
 
 
 class Statistics:
